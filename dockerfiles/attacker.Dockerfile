@@ -1,6 +1,6 @@
 FROM phusion/baseimage:master
 
-LABEL maintainer="sauman"
+LABEL maintainer="wk"
 
 LABEL name="attacker"
 
@@ -13,4 +13,4 @@ RUN apt update -y \
    proxychains4 \
    hydra \
    ncat \
-   && curl https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Leaked-Databases/rockyou-05.txt -o /home/rock.txt
+   socat

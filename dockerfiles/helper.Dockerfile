@@ -5,6 +5,9 @@ RUN apt update -y \
     ssh \
     iputils-ping \
     net-tools \
+    mysql-server \
+    nginx \
+    socat \
     && echo 'root:123456789' | chpasswd \
     && sed -i "s/#PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config \
     && sed -i "s/#PermitRootLogin yes/PermitRootLogin yes/g" /etc/ssh/sshd_config \

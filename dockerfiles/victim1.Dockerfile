@@ -1,7 +1,9 @@
 FROM phusion/baseimage:master
 
 RUN apt update -y \
-    && apt install -y python3-pip 
+    && apt install -y python3-pip \
+    mysql-server \
+    socat
 
 WORKDIR /opt
 
